@@ -79,12 +79,6 @@
   box-shadow: 2px 10px 9px 0 #FFD2C1;
 }
 
-.box-shadow-three {
-  box-shadow: 0 4px 41px 0 #EEEEEE;
-}
-
-
-
 @layer utilities {
   .bg-custom-gradient {
     background: radial-gradient(

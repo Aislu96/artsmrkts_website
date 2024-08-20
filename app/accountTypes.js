@@ -15,7 +15,7 @@ const AccountTypes = () => {
                 <div className="flex flex-row justify-between gap-12">
                     <div
                         className="my-2 p-6 bg-white rounded-2xl border-t-[3px] border-t-white cursor-pointer shadow-none hover:shadow-2xl hover:border-t-customBlueFon hover:rounded-t-none flex-1">
-                        <h3 className="font-medium text-[32px] leading-[38.4px] text-customBlackOne">Standard</h3>
+                        <h3 className="font-medium text-[32px] leading-[38.4px] text-customBlackOne mb-4">Standard</h3>
                         <p className="text-[16px] leading-[19.2px] text-customGreySeven mt-16px">Even our standard
                             account
                             is zero commission</p>
@@ -71,14 +71,21 @@ const AccountTypes = () => {
                         <Link href="/register">
                             <button
                                 type="button"
-                                className="flex justify-center items-center w-full py-3  cursor-pointer rounded-[44px] bg-customBlueFon hhover:bg-customBlue active:bg-customBlueTwo"
+                                className="flex justify-center items-center w-full py-3  cursor-pointer rounded-[44px] bg-customBlueFon hover:bg-customBlue active:bg-customBlueTwo"
                             >
                                 <span className="text-[20px] leading-[24px] font-medium text-white">Register</span>
                             </button>
                         </Link>
                     </div>
-                    <div className="p-8 bg-white rounded-2xl border-t-[3px] border-t-white cursor-pointer shadow-none hover:shadow-2xl hover:border-t-customOrangeTwo hover:rounded-t-none flex-1">
-                        <h3 className="font-medium text-[32px] leading-[38.4px] text-customBlackOne">VIP</h3>
+                    <div
+                        className="p-8 bg-white rounded-2xl border-t-[3px] border-t-white cursor-pointer shadow-none hover:shadow-2xl hover:border-t-customOrangeTwo hover:rounded-t-none flex-1">
+                        <div className="flex flex-row justify-between mb-4">
+                            <h3 className="font-medium text-[32px] leading-[38.4px] text-customBlackOne">VIP</h3>
+                            <div
+                                className="flex justify-center items-center  py-2 px-4 cursor-pointer rounded-[44px] bg-customOrangeSix h-[27px]">
+                                <span className="text-[16px] leading-[19.2px] text-white">recommended</span>
+                            </div>
+                        </div>
                         <p className="text-[16px] leading-[19.2px] text-customGreySeven mt-16px">Be under the spot with
                             our VIP account, ultra-fast position execution</p>
                         <div className="flex flex-row mt-[70px] mb-8 items-baseline">
@@ -120,7 +127,8 @@ const AccountTypes = () => {
                                             className="text-[14px] leading-[16.8px] font-medium text-customBlackFour">Metals</span>
                                     </div>
                                     <div className="flex flex-row gap-2">
-                                    <span className="text-[14px] leading-[16.8px] font-medium text-customBlackFour">Indices</span>
+                                        <span
+                                            className="text-[14px] leading-[16.8px] font-medium text-customBlackFour">Indices</span>
                                         <span
                                             className="text-[14px] leading-[16.8px] font-medium text-customBlackFour">Crypto</span>
                                     </div>
@@ -138,7 +146,7 @@ const AccountTypes = () => {
                     </div>
                     <div
                         className="my-2 p-6 bg-white rounded-2xl border-t-[3px] border-t-white cursor-pointer shadow-none hover:shadow-2xl  hover:border-t-customBlueFon hover:rounded-t-none flex-1">
-                        <h3 className="font-medium text-[32px] leading-[38.4px] text-customBlackOne">ECN</h3>
+                        <h3 className="font-medium text-[32px] leading-[38.4px] text-customBlackOne mb-4">ECN</h3>
                         <p className="text-[16px] leading-[19.2px] text-customGreySeven mt-16px">The game changer
                             account with almost nil spreads and zero commission</p>
                         <div className="flex flex-row mt-[70px] mb-8 items-baseline">
@@ -184,7 +192,7 @@ const AccountTypes = () => {
                         <Link href="/register">
                             <button
                                 type="button"
-                                className="flex justify-center items-center w-full py-3  cursor-pointer rounded-[44px] bg-customBlueFon hhover:bg-customBlue active:bg-customBlueTwo"
+                                className="flex justify-center items-center w-full py-3  cursor-pointer rounded-[44px] bg-customBlueFon hover:bg-customBlue active:bg-customBlueTwo"
                             >
                                 <span className="text-[20px] leading-[24px] font-medium text-white">Register</span>
                             </button>

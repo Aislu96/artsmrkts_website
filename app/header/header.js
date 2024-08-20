@@ -48,7 +48,7 @@ const Header = () => {
             </div>
             <div className="max-w-[1240px] mx-auto flex flex-row justify-between items-center py-6 px-4 max-h-[83px]">
                 <div className="flex flex-row items-center gap-4">
-                    <Link href="/"  rel="noopener noreferrer">
+                    <Link href="/" rel="noopener noreferrer">
                         <Image src="logo.svg" alt="artsmarket company logo" width={30} height={21}
                                className="object-contain  max-w-full max-h-full"/>
                     </Link>
@@ -77,21 +77,26 @@ const Header = () => {
                                    placeholder="trading"
                                    type="text" name="trading" id="trading"
                                    className="w-full bg-customGreyTwo outline-0 text-[16px] leading-[19.2px] capitalize"/>
-                            <Image src="close.svg" alt="close" width={8} height={8} className="object-contain cursor-pointer"
+                            <Image src="close.svg" alt="close" width={8} height={8}
+                                   className="object-contain cursor-pointer"
                                    onClick={handleClickClose}/>
                         </form>
 
                         {isSearchFind && inputValueTrading && (
-                            <div className="absolute top-[43px] left-0 box-shadow rounded-lg flex flex-col w-full bg-white z-10">
+                            <div
+                                className="absolute top-[43px] left-0 box-shadow rounded-lg flex flex-col w-full bg-white z-10">
                                 {filteredData.length > 0 ? (
                                     filteredData.map((item, index) => (
-                                        <div key={index} className="px-4 py-1 hover:text-customOrange active:text-customRedText border-bottom">
-                                            <span className="text-[14px] leading-[16.8px] capitalize"><span className="text-customOrange">{inputValueTrading}</span>{item.slice(inputValueTrading.length)}</span>
+                                        <div key={index}
+                                             className="px-4 py-1 hover:text-customOrange active:text-customRedText border-bottom">
+                                            <span className="text-[14px] leading-[16.8px] capitalize"><span
+                                                className="text-customOrange">{inputValueTrading}</span>{item.slice(inputValueTrading.length)}</span>
                                         </div>
                                     ))
                                 ) : (
                                     <div className="p-2.5 text-center">
-                                        <span className="text-[16px] leading-[19.2px] text-customGreyThree">Not found</span>
+                                        <span
+                                            className="text-[16px] leading-[19.2px] text-customGreyThree">Not found</span>
                                     </div>
                                 )}
                             </div>

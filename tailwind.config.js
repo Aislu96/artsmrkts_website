@@ -42,6 +42,7 @@ module.exports = {
         customOrangeThree: "#AF2600",
         customOrangeFour: "#FFCEBD",
         customOrangeFive: "#851000",
+        customOrangeSix: "#F15C27",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

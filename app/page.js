@@ -10,8 +10,8 @@ export default function Home() {
             <Dialogue/>
             <Banner/>
             {/*<Slider />*/}
-            <Trade />
-            <AccountTypes />
+            <Trade/>
+            <AccountTypes/>
         </main>
     );
 }
