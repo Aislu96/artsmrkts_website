@@ -48,7 +48,7 @@ const Header = () => {
             </div>
             <div className="max-w-[1240px] mx-auto flex flex-row justify-between items-center py-6 px-4 max-h-[83px]">
                 <div className="flex flex-row items-center gap-4">
-                    <Link href="/" target="_blank" rel="noopener noreferrer">
+                    <Link href="/"  rel="noopener noreferrer">
                         <Image src="logo.svg" alt="artsmarket company logo" width={30} height={21}
                                className="object-contain  max-w-full max-h-full"/>
                     </Link>
@@ -77,7 +77,7 @@ const Header = () => {
                                    placeholder="trading"
                                    type="text" name="trading" id="trading"
                                    className="w-full bg-customGreyTwo outline-0 text-[16px] leading-[19.2px] capitalize"/>
-                            <Image src="close.svg" alt="close" width={8} height={8} className="object-contain"
+                            <Image src="close.svg" alt="close" width={8} height={8} className="object-contain cursor-pointer"
                                    onClick={handleClickClose}/>
                         </form>
 
@@ -173,15 +173,24 @@ const Header = () => {
                     </div>
                 )}
                 <div className="flex flex-row gap-2">
-                    <div
-                        className="flex justify-center items-center px-4 py-2 gap-3 cursor-pointer rounded-[44px] border-[1px] border-customGrey w-[88px] hover:bg-customGreyTwo active:bg-customGrey">
-                        <span className="text-[14px] leading-[16.8px] text-customBlue">Register</span>
-                    </div>
-                    <div
-                        className="flex justify-center flex-row items-center px-4 py-2 gap-3 cursor-pointer bg-customBlueFon rounded-[44px] w-[88px] hover:bg-customBlue active:bg-customBlueTwo">
-                        <span className="text-[14px] leading-[16.8px] text-white">Login</span>
-                    </div>
+                    <Link href="/register">
+                        <button
+                            type="button"
+                            className="flex justify-center items-center px-4 py-2  cursor-pointer rounded-[44px] border-[1px] border-customGrey w-[88px] hover:bg-customGreyTwo active:bg-customGrey"
+                        >
+                            <span className="text-[14px] leading-[16.8px] text-customBlue">Register</span>
+                        </button>
+                    </Link>
+                    <Link href="/login">
+                        <button
+                            type="button"
+                            className="flex justify-center flex-row items-center px-4 py-2  cursor-pointer bg-customBlueFon rounded-[44px] w-[88px] hover:bg-customBlue active:bg-customBlueTwo"
+                        >
+                            <span className="text-[14px] leading-[16.8px] text-white">Login</span>
+                        </button>
+                    </Link>
                 </div>
+
             </div>
 
 
