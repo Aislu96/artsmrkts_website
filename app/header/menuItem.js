@@ -28,7 +28,7 @@ const MenuItem = ({label, isActive, handleClick, links = []}) => {
             </div>
 
             {isActive && (
-                <div className="absolute top-[43px] left-0 box-shadow rounded-lg flex flex-col w-full bg-white z-10">
+                <div className="absolute top-[43px] left-0 box-shadow rounded-lg flex flex-col w-full bg-white z-30">
                     {links.map((link, index) => (
                         <Link key={index} href={link.href} rel="noopener noreferrer"
                               className="px-4 py-1 hover:text-customOrange active:text-customRedText border-bottom">
