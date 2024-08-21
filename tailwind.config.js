@@ -36,6 +36,7 @@ module.exports = {
         customBlueTwo: "#001240",
         customBlueThree: "#060C22",
         customBlueFon: "#0F2777",
+        customBlueFour: "#041652",
         customRedText: "#851000",
         customOrange: "#DC4016",
         customOrangeTwo: "#FF5E24",

@@ -70,7 +70,9 @@
 
 .box-shadow {
   box-shadow: 1px 2px 4px 0 #EBEBEBB5;
-
+}
+.box-shadow-icon {
+  box-shadow: 1px 2px 4px 0 #3B404BB5;
 }
 .border-bottom:not(:last-child) {
   border-bottom: 0.5px solid #EBEBEB;
@@ -89,6 +91,12 @@
     );
   }
 }
+.element {
+  background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F9FAFF 20%, #F0F4FF 48.6%, #F1F4FF 63.5%, #E6EBFF 78.5%, #AEC1FF 100%),
+          #FFFFFF;
+}
+
 
 
 @keyframes slideUp {
