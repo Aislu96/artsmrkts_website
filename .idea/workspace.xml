@@ -74,7 +74,7 @@
       <updated>1724066087101</updated>
       <workItem from="1724066088798" duration="17081000" />
       <workItem from="1724137935820" duration="27320000" />
-      <workItem from="1724224594866" duration="21463000" />
+      <workItem from="1724224594866" duration="26839000" />
     </task>
     <servers />
   </component>
@@ -101,7 +101,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app/marketTrends.js</url>
-          <line>29</line>
+          <line>53</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

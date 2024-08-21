@@ -11,7 +11,7 @@ const Trade = () => {
                 <Link href="/login" className="flex-1 mt-16 relative z-20">
                     <button
                         type="button"
-                        className="flex justify-center flex-row items-center px-11 py-3  cursor-pointer border-[1px] border-customGrey bg-white  rounded-[44px] hover:bg-customGreyTwo active:bg-customGrey"
+                        className="flex justify-center flex-row items-center px-11 py-3  cursor-pointer border-[1px] border-customGrey bg-white  rounded-[44px] hover:bg-customGreyTwo active:bg-customGrey transition-colors duration-300 ease-in-out"
                     >
                         <span className="text-[20px] leading-[24px] font-semibold text-customOrangeFive">Register</span>
                     </button>

@@ -35,7 +35,7 @@ const Header = () => {
 
     return (
         <header>
-            <div className="py-[9px] bg-customHeaderFont text-[14px] leading-[16.8px] text-white text-center">
+            <div className="py-[9px]  px-4 bg-customHeaderFont text-[14px] leading-[16.8px] text-white text-center">
                 <p>
                     <span className="font-semibold">Trade Responsibly.</span> CFDs are complex instruments with a high
                     risk of losing money rapidly due to leverage.

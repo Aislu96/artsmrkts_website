@@ -20,7 +20,7 @@ const Banner = () => {
                         <Link href="/">
                             <button
                                 type="button"
-                                className="flex justify-center items-center px-[51.75px] py-3  cursor-pointer rounded-[44px] border-[1px] border-customGrey hover:bg-customGreyTwo active:bg-customGrey"
+                                className="flex justify-center items-center px-[51.75px] py-3  cursor-pointer rounded-[44px] border-[1px] border-customGrey hover:bg-customGreyTwo active:bg-customGrey transition-colors duration-300 ease-in-out"
                             >
                                 <span
                                     className="text-[20px] leading-[24px] text-customBlue font-medium">Try free demo</span>
@@ -29,7 +29,7 @@ const Banner = () => {
                         <Link href="/register">
                             <button
                                 type="button"
-                                className="flex justify-center items-center px-[51.75px] py-3  cursor-pointer rounded-[44px] bg-customOrangeTwo hover:bg-customOrange active:bg-customOrangeThree"
+                                className="flex justify-center items-center px-[51.75px] py-3  cursor-pointer rounded-[44px] bg-customOrangeTwo hover:bg-customOrange active:bg-customOrangeThree transition-colors duration-300 ease-in-out"
                             >
                                 <span className="text-[20px] leading-[24px] font-medium text-white">Register</span>
                             </button>
