@@ -4,7 +4,7 @@ import Image from "next/image";
 const Trade = () => {
     return (
         <section className="mt-16 mb-20 relative max-w-[1240px] mx-auto bg-customGreyFour rounded-3xl flex flex-row">
-            <div className="bg-custom-gradient w-full h-full absolute z-10 px-4 rounded-3xl"></div>
+            <div className="bg-custom-gradient w-full h-full absolute z-10 rounded-3xl"></div>
             <div className="flex flex-col flex-1 relative z-20 mt-32 mb-28 ml-36 overflow-hidden">
                 <h3 className="font-medium text-[32px] leading-[38.1px] text-customBlackFive">Trade Forex, Indices,
                     Stocks and more with Artsmrkts - the best Forex broker</h3>

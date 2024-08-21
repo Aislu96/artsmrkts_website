@@ -35,7 +35,7 @@ const Header = () => {
 
     return (
         <header>
-            <div className="py-[9px]  px-4 bg-customHeaderFont text-[14px] leading-[16.8px] text-white text-center">
+            <div className="py-[9px] bg-customHeaderFont text-[14px] leading-[16.8px] text-white text-center">
                 <p>
                     <span className="font-semibold">Trade Responsibly.</span> CFDs are complex instruments with a high
                     risk of losing money rapidly due to leverage.
@@ -46,7 +46,7 @@ const Header = () => {
                     understand how CFDs work and whether you can afford to take the high risk of losing your money.
                 </p>
             </div>
-            <div className="max-w-[1240px] mx-auto flex flex-row justify-between items-center py-6 px-4 max-h-[83px]">
+            <div className="max-w-[1240px] mx-auto flex flex-row justify-between items-center py-6 max-h-[83px]">
                 <div className="flex flex-row items-center gap-4">
                     <Link href="/" rel="noopener noreferrer">
                         <Image src="logo.svg" alt="artsmarket company logo" width={30} height={21}

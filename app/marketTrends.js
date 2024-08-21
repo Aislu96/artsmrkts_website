@@ -9,7 +9,7 @@ const MarketTrends = () => {
     const [isHoveredCard, setHoveredCard] = useState(null);
 
     return (
-        <section className="max-w-[1280px] px-4 mx-auto py-16">
+        <section className="max-w-[1280px] mx-auto py-16">
             <h2 className="text-customBlueThree text-[44px] leading-[52.8px] font-medium mb-14">Keep up with market
                 trends</h2>
             <div className="flex flex-row gap-5">

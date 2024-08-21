@@ -10,7 +10,7 @@ const Banner = () => {
     return (
         <section className="relative bg-customGreyFour rounded-b-[80px]">
             <div className="bg-custom-gradient w-full h-full absolute rounded-b-[80px] z-10"></div>
-            <div className="flex flex-row gap-[123px] max-w-[1240px] mx-auto px-4">
+            <div className="flex flex-row gap-[123px] max-w-[1240px] mx-auto">
                 <div className="flex flex-col pt-24 relative flex-1 z-20 mb-40">
                     <h1 className="font-semibold text-[54px] leading-[64.8px] text-customBlueThree">Reach your trading
                         potential</h1>

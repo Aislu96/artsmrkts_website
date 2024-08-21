@@ -4,7 +4,7 @@ const AccountTypes = () => {
     return (
         <section className="relative bg-customGreyFour rounded-t-[80px]">
             <div className="bg-custom-gradient w-full h-full absolute rounded-t-[80px] z-10"></div>
-            <div className="max-w-[1240px] mx-auto px-4 relative z-20 py-16 flex flex-col gap-16">
+            <div className="max-w-[1240px] mx-auto relative z-20 py-16 flex flex-col gap-16">
                 <div className="flex flex-row justify-between items-center">
                     <h2 className="font-medium text-[44px] leading-[52.8px]">Account types for any<br/>trading strategy
                     </h2>
