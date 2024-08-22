@@ -42,12 +42,13 @@
       <recent name="C:\Users\arsla\WebstormProjects\artsmrkts_website\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts_website\app\footer" />
       <recent name="C:\Users\arsla\WebstormProjects\artsmrkts_website\app" />
       <recent name="C:\Users\arsla\WebstormProjects\artsmrkts_website\app\header" />
       <recent name="C:\Users\arsla\WebstormProjects\artsmrkts_website\app\components" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -70,8 +71,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -86,7 +87,7 @@
       <workItem from="1724066088798" duration="17081000" />
       <workItem from="1724137935820" duration="27320000" />
       <workItem from="1724224594866" duration="27420000" />
-      <workItem from="1724310643458" duration="9904000" />
+      <workItem from="1724310643458" duration="17835000" />
     </task>
     <servers />
   </component>

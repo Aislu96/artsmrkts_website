@@ -232,10 +232,3 @@
     animation: slideDownMoreTwo 5s ease-in-out infinite;
 }
 
-
-.gradient-one {
-    background: radial-gradient(circle at 50% 50%, #FF4527 0%, #FFCBA3 50%, #FFFFFF 100%);
-}
-.gradient-two {
-    background: radial-gradient(circle at 50% 50%, #00A980 0%, #84FEE0 50%, #FFFFFF 100%);
-}
