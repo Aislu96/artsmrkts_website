@@ -2,11 +2,38 @@
 import Link from "next/link";
 import Image from "next/image";
 import {Inter, Zen_Kaku_Gothic_New} from "next/font/google";
+import {useEffect, useState} from "react";
 
 const inter = Inter({subsets: ["latin"]});
 const zen_kaku_gothic_new = Zen_Kaku_Gothic_New({subsets: ["latin"], weight: ["400"]});
 
 const Banner = () => {
+    const [currentPosition, setCurrentPosition] = useState(0);
+    const [isBuyFigureOrange, setIsBuyFigureOrange] = useState(false);
+    const [isSellFigureGreen, setIsSellFigureGreen] = useState(false);
+
+    useEffect(() => {
+        // Проверяем, если currentPosition равен 1 или 3
+        if (currentPosition === 1 || currentPosition === 3) {
+            // Запускаем интервал
+            const interval = setInterval(() => {
+                setIsBuyFigureOrange(prev => !prev);
+                setIsSellFigureGreen(prev => !prev);
+            }, 2000);
+
+            // Чистим интервал при размонтировании или изменении currentPosition
+            return () => clearInterval(interval);
+        }
+    }, [currentPosition]);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentPosition(prevPosition => (prevPosition + 1) % 5);
+        }, 5000);
+
+        return () => clearInterval(intervalId);
+    }, []);
+
     return (
         <section className="relative bg-customGreyFour rounded-b-[80px]">
             <div className="bg-custom-gradient w-full h-full absolute rounded-b-[80px] z-10"></div>
@@ -36,13 +63,14 @@ const Banner = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="flex flex-row flex-1 justify-between f-full gap-2">
+
+                {currentPosition === 0 && (<div className="flex flex-row flex-1 justify-between f-full gap-2">
                     <div className="flex flex-col items-center animate-slide-up my-auto gap-2">
                         <span className={`text-[16px] leading-[19.2px] ${zen_kaku_gothic_new.className}`}>323</span>
                         <Image src="figure.svg" alt="figure" width={57} height={202} className="object-contain"/>
                     </div>
                     <div className="flex flex-col items-center animate-slide-down my-auto gap-2">
-                        <Image src="buy.svg" alt="buy" width={71} height={46} className="object-contain relative top-5"/>
+                        <Image src="buy.svg" alt="buy" width={71} height={46} className="object-contain relative top-0"/>
                         <Image src="figure.svg" alt="figure" width={90} height={316} className="object-contain"/>
                         {/*<Image src="figureOrange.svg" alt="figure" width={110} height={316} className="object-contain"/>*/}
                     </div>
@@ -55,11 +83,116 @@ const Banner = () => {
                         <Image src="figure.svg" alt="figure" width={57} height={202} className="object-contain"/>
                     </div>
                     <div className="flex flex-col items-center animate-slide-up my-auto gap-2">
-                        <Image src="sell.svg" alt="sell" width={88} height={58} className="object-contain relative top-5"/>
+                        <Image src="sell.svg" alt="sell" width={88} height={58} className="object-contain relative top-0"/>
                         {/*<Image src="figureGreen.svg" alt="figure" width={152} height={444} className="object-contain"/>*/}
                         <Image src="figure.svg" alt="figure" width={120} height={444} className="object-contain"/>
                     </div>
-                </div>
+                </div>)}
+
+                {currentPosition === 1 && (<div className="flex flex-row flex-1 justify-between f-full gap-2">
+                    <div className="flex flex-col items-center animate-slide-up my-auto gap-2">
+                        <span className={`text-[16px] leading-[19.2px] ${zen_kaku_gothic_new.className}`}>323</span>
+                        <Image src="figure.svg" alt="figure" width={57} height={202} className="object-contain"/>
+                    </div>
+                    <div className={`flex flex-col items-center animate-slide-downMore-one my-auto gap-2 ${isBuyFigureOrange ? "gradient-one" : ''}`}>
+                        <Image src="buy.svg" alt="buy" width={71} height={46} className="object-contain relative top-0"/>
+                        {isBuyFigureOrange
+                            ? <Image src="figureOrange.svg" alt="figure" width={90} height={316} className="object-contain"/>
+                            : <Image src="figure.svg" alt="figure" width={90} height={316} className="object-contain"/>
+                        }
+                    </div>
+                    <div className="flex flex-col items-center animate-slide-up my-auto gap-2">
+                        <span className={`text-[19px] leading-[22.8px] ${zen_kaku_gothic_new.className}`}>325</span>
+                        <Image src="figure.svg" alt="figure" width={74} height={260} className="object-contain"/>
+                    </div>
+                    <div className="flex flex-col items-center animate-slide-down my-auto gap-2">
+                        <span className={`text-[17px] leading-[20.4px] ${zen_kaku_gothic_new.className}`}>324</span>
+                        <Image src="figure.svg" alt="figure" width={57} height={202} className="object-contain"/>
+                    </div>
+                    <div className={`flex flex-col items-center animate-slide-upMore-two  my-auto gap-2 ${isBuyFigureOrange ? "gradient-two" : ''}`}>
+                        <Image src="sell.svg" alt="sell" width={88} height={58} className="object-contain relative top-0"/>
+                        {isSellFigureGreen
+                            ? <Image src="figureGreen.svg" alt="figure" width={120} height={444} className="object-contain"/>
+                            : <Image src="figure.svg" alt="figure" width={120} height={444} className="object-contain"/>
+                        }
+                    </div>
+                </div>)}
+                {currentPosition === 2 && (<div className="flex flex-row flex-1 justify-between f-full gap-2">
+                    <div className="flex flex-col items-center animate-slide-up my-auto gap-2">
+                        <span className={`text-[16px] leading-[19.2px] ${zen_kaku_gothic_new.className}`}>323</span>
+                        <Image src="figure.svg" alt="figure" width={57} height={202} className="object-contain"/>
+                    </div>
+                    <div className="flex flex-col items-center animate-slide-down my-auto gap-2">
+                        <Image src="buy.svg" alt="buy" width={71} height={46} className="object-contain relative top-0"/>
+                        <Image src="figure.svg" alt="figure" width={90} height={316} className="object-contain"/>
+                        {/*<Image src="figureOrange.svg" alt="figure" width={110} height={316} className="object-contain"/>*/}
+                    </div>
+                    <div className="flex flex-col items-center animate-slide-up my-auto gap-2">
+                        <span className={`text-[19px] leading-[22.8px] ${zen_kaku_gothic_new.className}`}>325</span>
+                        <Image src="figure.svg" alt="figure" width={74} height={260} className="object-contain"/>
+                    </div>
+                    <div className="flex flex-col items-center animate-slide-down my-auto gap-2">
+                        <span className={`text-[17px] leading-[20.4px] ${zen_kaku_gothic_new.className}`}>324</span>
+                        <Image src="figure.svg" alt="figure" width={57} height={202} className="object-contain"/>
+                    </div>
+                    <div className="flex flex-col items-center animate-slide-up my-auto gap-2">
+                        <Image src="sell.svg" alt="sell" width={88} height={58} className="object-contain relative top-0"/>
+                        {/*<Image src="figureGreen.svg" alt="figure" width={152} height={444} className="object-contain"/>*/}
+                        <Image src="figure.svg" alt="figure" width={120} height={444} className="object-contain"/>
+                    </div>
+                </div>)}
+                {currentPosition === 3 && (<div className="flex flex-row flex-1 justify-between f-full gap-2">
+                    <div className="flex flex-col items-center animate-slide-up my-auto gap-2">
+                        <span className={`text-[16px] leading-[19.2px] ${zen_kaku_gothic_new.className}`}>323</span>
+                        <Image src="figure.svg" alt="figure" width={57} height={202} className="object-contain"/>
+                    </div>
+                    <div className={`flex flex-col items-center animate-slide-upMore-two my-auto gap-2 ${isBuyFigureOrange ? "gradient-one" : ''}`}>
+                        <Image src="buy.svg" alt="buy" width={71} height={46} className="object-contain relative top-0"/>
+                        {isBuyFigureOrange
+                            ? <Image src="figureOrange.svg" alt="figure" width={90} height={316} className="object-contain"/>
+                            : <Image src="figure.svg" alt="figure" width={90} height={316} className="object-contain"/>
+                        }
+                    </div>
+                    <div className="flex flex-col items-center animate-slide-up my-auto gap-2">
+                        <span className={`text-[19px] leading-[22.8px] ${zen_kaku_gothic_new.className}`}>325</span>
+                        <Image src="figure.svg" alt="figure" width={74} height={260} className="object-contain"/>
+                    </div>
+                    <div className="flex flex-col items-center animate-slide-down my-auto gap-2">
+                        <span className={`text-[17px] leading-[20.4px] ${zen_kaku_gothic_new.className}`}>324</span>
+                        <Image src="figure.svg" alt="figure" width={57} height={202} className="object-contain"/>
+                    </div>
+                    <div className={`flex flex-col items-center animate-slide-downMore-two  my-auto gap-2 ${isBuyFigureOrange ? "gradient-two" : ''}`}>
+                        <Image src="sell.svg" alt="sell" width={88} height={58} className="object-contain relative top-0"/>
+                        {isSellFigureGreen
+                            ? <Image src="figureGreen.svg" alt="figure" width={120} height={444} className="object-contain"/>
+                            : <Image src="figure.svg" alt="figure" width={120} height={444} className="object-contain"/>
+                        }
+                    </div>
+                </div>)}
+                {currentPosition === 4 && (<div className="flex flex-row flex-1 justify-between f-full gap-2">
+                    <div className="flex flex-col items-center animate-slide-up my-auto gap-2">
+                        <span className={`text-[16px] leading-[19.2px] ${zen_kaku_gothic_new.className}`}>323</span>
+                        <Image src="figure.svg" alt="figure" width={57} height={202} className="object-contain"/>
+                    </div>
+                    <div className="flex flex-col items-center animate-slide-down my-auto gap-2">
+                        <Image src="buy.svg" alt="buy" width={71} height={46} className="object-contain relative top-0"/>
+                        <Image src="figure.svg" alt="figure" width={90} height={316} className="object-contain"/>
+                        {/*<Image src="figureOrange.svg" alt="figure" width={110} height={316} className="object-contain"/>*/}
+                    </div>
+                    <div className="flex flex-col items-center animate-slide-up my-auto gap-2">
+                        <span className={`text-[19px] leading-[22.8px] ${zen_kaku_gothic_new.className}`}>325</span>
+                        <Image src="figure.svg" alt="figure" width={74} height={260} className="object-contain"/>
+                    </div>
+                    <div className="flex flex-col items-center animate-slide-down my-auto gap-2">
+                        <span className={`text-[17px] leading-[20.4px] ${zen_kaku_gothic_new.className}`}>324</span>
+                        <Image src="figure.svg" alt="figure" width={57} height={202} className="object-contain"/>
+                    </div>
+                    <div className="flex flex-col items-center animate-slide-up my-auto gap-2">
+                        <Image src="sell.svg" alt="sell" width={88} height={58} className="object-contain relative top-0"/>
+                        {/*<Image src="figureGreen.svg" alt="figure" width={152} height={444} className="object-contain"/>*/}
+                        <Image src="figure.svg" alt="figure" width={120} height={444} className="object-contain"/>
+                    </div>
+                </div>)}
             </div>
             <div className="flex flex-row gap-5 pb-10 pt-[49px] max-w-[1240px] mx-auto px-4">
                 <div className="flex flex-col relative z-20 gap-2 mr-[51px]">

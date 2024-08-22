@@ -160,6 +160,54 @@
     }
 }
 
+@keyframes slideUpMoreOne {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-60px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDownMoreOne {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(60px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUpMoreTwo {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDownMoreTwo {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(60px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .animate-slide-up {
     animation: slideUp 5s ease-in-out infinite;
 }
@@ -168,3 +216,26 @@
     animation: slideDown 5s ease-in-out infinite;
 }
 
+.animate-slide-upMore-one {
+    animation: slideUpMoreOne 5s ease-in-out infinite;
+}
+
+.animate-slide-downMore-one {
+    animation: slideDownMoreOne 5s ease-in-out infinite;
+}
+
+.animate-slide-upMore-two {
+    animation: slideUpMoreTwo 5s ease-in-out infinite;
+}
+
+.animate-slide-downMore-two {
+    animation: slideDownMoreTwo 5s ease-in-out infinite;
+}
+
+
+.gradient-one {
+    background: radial-gradient(circle at 50% 50%, #FF4527 0%, #FFCBA3 50%, #FFFFFF 100%);
+}
+.gradient-two {
+    background: radial-gradient(circle at 50% 50%, #00A980 0%, #84FEE0 50%, #FFFFFF 100%);
+}
