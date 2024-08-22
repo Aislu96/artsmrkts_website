@@ -1,7 +1,7 @@
 import {Work_Sans} from "next/font/google";
 import "./globals.css";
 import Header from "./header/header";
-import Footer from "@/app/footer";
+import Footer from "@/app/footer/footer";
 
 const work_sans = Work_Sans({subsets: ["latin"], weight: ["400", "500", "600", "700", "800"]});
 
