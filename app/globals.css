@@ -57,6 +57,9 @@
       rgba(255, 255, 255, 0) 100%
     );
   }
+  .bg-custom-gradient-bonus {
+    background: linear-gradient(343.36deg, #FE9874 -14.68%, #FFE9CC 38.16%, #FFEED6 47.67%, #FFFFFF 85.24%);
+  }
 }
 
 /* CSS для плавного открытия блока */
