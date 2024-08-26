@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49ed8044-3797-4251-b9f5-ce08f24dfe19" name="Changes" comment="" />
+    <list default="true" id="a3fd4249-e386-4b97-9b54-f74daf8edb67" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,9 +14,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2ksIvK7s07pKlhoTJ3at54vsuLi" />
+  <component name="ProjectId" id="2l1I7Rq8flhdkmHV35TTHueDfyw" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,7 +28,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/arsla/WebstormProjects/artsmrkts_website&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/arsla/WebstormProjects/artsmrkts&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -37,28 +37,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts_website\app" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts_website\app\footer" />
-      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts_website\app" />
-      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts_website\app\header" />
-      <recent name="C:\Users\arsla\WebstormProjects\artsmrkts_website\app\components" />
-    </key>
-  </component>
-  <component name="RunManager" selected="npm.dev">
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -72,51 +51,24 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="49ed8044-3797-4251-b9f5-ce08f24dfe19" name="Changes" comment="" />
-      <created>1724066087101</created>
+      <changelist id="a3fd4249-e386-4b97-9b54-f74daf8edb67" name="Changes" comment="" />
+      <created>1724340988178</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1724066087101</updated>
-      <workItem from="1724066088798" duration="17081000" />
-      <workItem from="1724137935820" duration="27320000" />
-      <workItem from="1724224594866" duration="27420000" />
-      <workItem from="1724310643458" duration="17835000" />
+      <updated>1724340988178</updated>
+      <workItem from="1724340991134" duration="138000" />
+      <workItem from="1724341135356" duration="610000" />
+      <workItem from="1724397107643" duration="626000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/header/header.js</url>
-          <line>46</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/header/header.js</url>
-          <line>37</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/page.js</url>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/marketTrends.js</url>
-          <line>53</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
