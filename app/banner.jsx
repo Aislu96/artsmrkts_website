@@ -55,7 +55,7 @@ const Banner = () => {
                 type="button"
                 className="flex cursor-pointer items-center justify-center rounded-[44px] bg-white border-[1px] border-customGrey px-[51.75px] py-3 transition-colors duration-300 ease-in-out hover:bg-customGreyTwo active:bg-customGrey"
               >
-                <span className="text-[20px] font-medium leading-[24px] text-customBlue">
+                <span className="text-[20px] font-semibold leading-[24px] text-customBlue">
                   Try demo
                 </span>
               </button>
@@ -65,7 +65,7 @@ const Banner = () => {
                 type="button"
                 className="flex cursor-pointer items-center justify-center rounded-[44px] bg-customOrangeTwo px-[51.75px] py-3 transition-colors duration-300 ease-in-out hover:bg-customOrange active:bg-customOrangeThree"
               >
-                <span className="text-[20px] font-medium leading-[24px] text-white">
+                <span className="text-[20px] font-semibold leading-[24px] text-white">
                   Register now
                 </span>
               </button>

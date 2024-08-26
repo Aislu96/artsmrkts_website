@@ -1,4 +1,6 @@
 import BannerBonus from "../bannerBonus";
+import AboutBonus from "./aboutBonus";
+import Terms from "./terms";
 
 export default function Page() {
     return (
@@ -11,6 +13,8 @@ export default function Page() {
                 buttonText="Get the bonus"
                 linkHref="/bonus"
             />
+            <AboutBonus/>
+            <Terms />
         </main>
     );
 }

@@ -54,12 +54,12 @@ const Header = () => {
       </div>
       <div className="mx-auto flex max-h-[83px] max-w-[1240px] flex-row items-center justify-between py-6">
         <div className="flex flex-row items-center gap-4">
-          <Link href="/" rel="noopener noreferrer">
+          <Link href="/" rel="noopener noreferrer" className="w-[35px] h-[35px] bg-customWhiteOne flex items-center justify-center rounded-lg border-[0.5px] border-solid border-customGreyOne box-shadow-logo">
             <Image
               src="logo.svg"
               alt="artsmarket company logo"
-              width={30}
-              height={21}
+              width={25}
+              height={17}
               className="max-h-full max-w-full object-contain"
             />
           </Link>
@@ -225,7 +225,7 @@ const Header = () => {
               type="button"
               className="flex w-[88px] cursor-pointer items-center justify-center rounded-[44px] border-[1px] border-customGrey px-4 py-2 hover:bg-customGreyTwo active:bg-customGrey"
             >
-              <span className="text-[14px] leading-[16.8px] text-customBlue">
+              <span className="text-[14px] leading-[16.8px] text-customBlue font-semibold">
                 Register
               </span>
             </button>
@@ -235,7 +235,7 @@ const Header = () => {
               type="button"
               className="flex w-[88px] cursor-pointer flex-row items-center justify-center rounded-[44px] bg-customBlueFon px-4 py-2 hover:bg-customBlue active:bg-customBlueTwo"
             >
-              <span className="text-[14px] leading-[16.8px] text-white">
+              <span className="text-[14px] leading-[16.8px] text-white font-semibold">
                 Login
               </span>
             </button>

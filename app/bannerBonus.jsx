@@ -25,7 +25,7 @@ const BannerBonus = ({
                             type="button"
                             className="flex cursor-pointer items-center gap-2 justify-center rounded-[44px] bg-customOrangeTwo px-[44px] py-3 transition-colors duration-300 ease-in-out hover:bg-customOrange active:bg-customOrangeThree"
                         >
-                            <span className="text-[20px] font-medium leading-[24px] text-white">
+                            <span className="text-[20px] font-semibold leading-[24px] text-white">
                                 {buttonText}
                             </span>
                             <Image src="/arrowWhite.svg" alt="arrow" width={34} height={3}/>

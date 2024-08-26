@@ -1,5 +1,7 @@
 import BannerBonus from "../bannerBonus";
 import Image from "next/image";
+import AboutBonus from "./aboutBonus";
+import Terms from "./terms";
 
 export default function Page() {
     return (
@@ -13,6 +15,8 @@ export default function Page() {
                 linkHref="/bonus"
                 children={ <Image src="/coin.svg" alt="coin" width={223} height={120} className="object-contain absolute bottom-5 right-16"/>}
             />
+            <AboutBonus/>
+            <Terms />
         </main>
     );
 }

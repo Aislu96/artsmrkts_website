@@ -8,13 +8,13 @@ const Footer = () => {
   return (
     <footer className="bg-custom-gradient-two">
       <div className="mx-auto max-w-[1240px] pb-[91px] pt-[100px]">
-        <div className="mb-16 flex flex-row gap-2.5">
-          <Link href="/" rel="noopener noreferrer">
+        <div className="mb-16 flex flex-row items-center gap-2.5">
+          <Link href="/" rel="noopener noreferrer" className="w-[61px] h-[61px] bg-customWhiteOne flex items-center justify-center rounded-lg border-[0.77px] border-solid border-customGreyOne box-shadow-logo-footer">
             <Image
               src="logo.svg"
               alt="logo"
-              width={67}
-              height={46}
+              width={41}
+              height={28}
               className="object-contain"
             />
           </Link>
