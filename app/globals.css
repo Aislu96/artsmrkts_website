@@ -3,9 +3,26 @@
 @tailwind utilities;
 
 
-.box-shadow-logo {
-    box-shadow: -0.94px -0.94px 1.56px 0px #E9EAEF inset;
+textarea::-webkit-scrollbar {
+    padding-left: 20px;
+    width: 3px;
+    height: 3px;
 }
+
+textarea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: #0F2777;
+    height: 20px;
+    border-radius: 20px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}
+
 
 .box-shadow-logo-footer {
     box-shadow: -1.54px -1.54px 2.57px 0px #E9EAEF inset;
@@ -287,4 +304,33 @@
 
 .animate-slide-downMore-two {
     animation: slideDownMoreTwo 5s ease-in-out infinite;
+}
+
+
+.PhoneInputCountry {
+    padding: 14px 8px;
+    border-radius: 8px;
+    background-color: #F6F6F6;
+    margin-right: 8px;
+}
+
+.PhoneInputInput {
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: #182654 !important;
+}
+
+.PhoneInputCountryIcon, .PhoneInputCountryIcon--border, .PhoneInputCountryIconImg {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.PhoneInputCountrySelectArrow {
+    width: 7px !important;
+    height: 7px !important;
 }
