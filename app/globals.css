@@ -23,7 +23,9 @@ textarea::-webkit-scrollbar-thumb:hover {
     background: #0056b3;
 }
 
-
+.box-shadow-logo {
+    box-shadow: -0.94px -0.94px 1.56px 0px #E9EAEF inset;
+}
 .box-shadow-logo-footer {
     box-shadow: -1.54px -1.54px 2.57px 0px #E9EAEF inset;
 }
@@ -92,6 +94,22 @@ textarea::-webkit-scrollbar-thumb:hover {
     .bg-custom-gradient-bonus-two {
         background: radial-gradient(47.68% 50% at 100% 50%, rgba(209, 48, 19, 0.4) 0%, rgba(255, 233, 204, 0.4) 43.84%, rgba(250, 250, 251, 0) 100%);
     }
+
+    .bg-custom-gradient-bonus-three {
+        background: radial-gradient(59.58% 65.29% at 50% 50%, rgba(209, 48, 19, 0.4) 0%, rgba(255, 233, 204, 0.4) 39%, rgba(250, 250, 251, 0) 75%);
+    }
+
+    .bg-custom-gradient-six {
+    background:radial-gradient(72.58% 111.29% at 70% 100%, rgba(209, 48, 19, 0.4) 0%, rgba(255, 233, 204, 0.4) 39%, rgba(250, 250, 251, 0) 75%);
+    }
+    .bg-custom-gradient-five {
+        background: linear-gradient(351.55deg, rgba(254, 152, 116, 0.6) -14.89%, rgba(255, 233, 204, 0.6) 40.09%, rgba(255, 238, 214, 0.6) 49.97%, rgba(255, 255, 255, 0.6) 89.06%);
+    }
+
+    .bg-custom-gradient-why {
+        background: linear-gradient(182.55deg, #FAFAFB 7.1%, rgba(255, 255, 255, 0) 106.62%);
+    }
+
 }
 
 /* CSS для плавного открытия блока */

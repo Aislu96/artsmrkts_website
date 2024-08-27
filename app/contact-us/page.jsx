@@ -178,7 +178,7 @@ export default function Page() {
                                     onChange={(value) => handleChange(value, 'name')}
                                     required
                                 />
-                                {inputValueName && !nameError && (
+                                {inputValueName && (
                                     <div
                                         className="absolute h-7 w-7 right-6 top-4 cursor-pointer flex items-center justify-center"
                                         onClick={() => handleClickClear('name')}
@@ -209,7 +209,7 @@ export default function Page() {
                                     onChange={(value) => handleChange(value, 'email')}
                                     required
                                 />
-                                {inputValueEmail && !emailError && (
+                                {inputValueEmail && (
                                     <div
                                         className="absolute h-7 w-7 right-6 top-4 cursor-pointer flex items-center justify-center"
                                         onClick={() => handleClickClear('email')}
