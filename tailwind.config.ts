@@ -23,18 +23,12 @@ const config: Config = {
         customGreySeven: "#707070",
         customGreyEight: "#373737",
         customGreyNine: "#A3A3A3",
-        customGreyTen: "#F4F4F4",
-        customGreyEleven: "#524D49",
-        customGreyTwelve: "#E0E0E0",
-        customGreyThirteen: "#EBEBEB",
-        customGreyFourteen: "#1B1F3B",
         customBlue: "#182654",
         customBlueTwo: "#001240",
         customBlueThree: "#060C22",
         customBlueFon: "#0F2777",
         customBlueFour: "#041652",
         customBlueFive: "#23293F",
-        customBlueSix: "#2F4DAE",
         customRedText: "#851000",
         customOrange: "#DC4016",
         customOrangeTwo: "#FF5E24",
@@ -45,7 +39,13 @@ const config: Config = {
         customOrangeSeven: "#F36A36",
         customOrangeEight: "#F36934",
         customGreyOne: "#F3F5FC",
-        customWhiteOne:"#FDFDFF",
+        customWhiteOne: "#FDFDFF",
+        customGreyTen: "#F4F4F4",
+        customGreyEleven: "#524D49",
+        customGreyTwelve: "#E0E0E0",
+        customGreyThirteen: "#EBEBEB",
+        customGreyFourteen: "#1B1F3B",
+        customBlueSix: "#2F4DAE",
       },
 
       backgroundImage: {
@@ -55,7 +55,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-  ],
+  plugins: [],
 };
 export default config;
