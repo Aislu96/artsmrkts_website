@@ -13,7 +13,7 @@ export default function Page() {
         <main className="relative">
             <HelpSection/>
             <section className="relative">
-                <div className="max-w-[1280px] mx-auto pt-16 pb-10 flex flex-col gap-11">
+                <div className="max-w-screen-xl mx-auto pt-16 pb-10 flex flex-col gap-11">
                     <h2 className="text-[32px] font-medium leading-[38.4px] text-customBlueThree">We are here to
                         help</h2>
                     <div className="flex flex-row gap-11 h-[295px]">
@@ -89,11 +89,11 @@ export default function Page() {
                 </div>
                 <div className="mx-auto max-w-screen-xl">
                     {isActive  &&
-                        <div className="max-w-[728px] bg-customGreyTen rounded-2xl px-11 py-14 flex flex-col gap-8 flex-1">
-                            <FormCall setFormSubmitted={setFormSubmitted} setIsActive={setIsActive}/>
-                        </div> }
+                    <div className="max-w-[728px] bg-customGreyTen rounded-2xl px-11 py-14 flex flex-col gap-8 flex-1">
+                        <FormCall setFormSubmitted={setFormSubmitted} setIsActive={setIsActive}/>
+                    </div> }
                     {!isActive && formSubmitted &&
-                        <div className="max-w-[728px] bg-white rounded-2xl px-8  gap-6 py-4 flex flex-row border-[1px] border-solid border-customGrey items-center">
+                             <div className="max-w-[728px] bg-white rounded-2xl px-8  gap-6 py-4 flex flex-row border-[1px] border-solid border-customGrey items-center">
                             <div
                                 className="flex h-[60px] w-[60px] cursor-pointer items-center justify-center rounded-[100px] bg-customGreenOne">
                                 <Image src="arrow7.svg" alt="call" width={18} height={15}

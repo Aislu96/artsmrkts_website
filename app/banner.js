@@ -4,20 +4,8 @@ import Image from "next/image";
 import { Inter, Zen_Kaku_Gothic_New } from "next/font/google";
 import { useEffect, useState, useRef } from "react";
 import dynamic from "next/dynamic";
-import LottiePlayerHtml from "./LottiePlayerHtml";
+import LottiePlayerHtml from "./lottiePlayerHtml";
 import LottiePlayerHtmlRed from "./lottiePlayerHtmlRed";
-
-// const LottiePlayerGreen = dynamic(() => import("./lottiePlayerHtml"), {
-//   ssr: false,
-// });
-
-const LottiePlayerRed = dynamic(() => import("./lottiePlayerHtmlRed"), {
-  ssr: false,
-});
-
-// const LottiePlayerGreen = dynamic(() => import("./LottiePlayerGreen"), {
-//   ssr: false,
-// });
 
 const inter = Inter({ subsets: ["latin"] });
 const zen_kaku_gothic_new = Zen_Kaku_Gothic_New({
@@ -30,10 +18,6 @@ const Banner = () => {
   const [isBuyFigureOrange, setIsBuyFigureOrange] = useState(false);
   const [isSellFigureGreen, setIsSellFigureGreen] = useState(false);
   const ref = useRef(null);
-
-  // useEffect(() => {
-  //   import("@dotlottie/player-component");
-  // }, []);
 
   useEffect(() => {
     // Проверяем, если currentPosition равен 1 или 3
@@ -75,7 +59,7 @@ const Banner = () => {
                 type="button"
                 className="flex cursor-pointer items-center justify-center rounded-[44px] bg-white px-[51.75px] py-3 transition-colors duration-300 ease-in-out hover:bg-customGreyTwo active:bg-customGrey"
               >
-                <span className="text-[20px] font-medium leading-[24px] text-customBlue">
+                <span className="text-[20px] font-semibold leading-[24px] text-customBlue">
                   Try demo
                 </span>
               </button>
@@ -85,7 +69,7 @@ const Banner = () => {
                 type="button"
                 className="flex cursor-pointer items-center justify-center rounded-[44px] bg-customOrangeTwo px-[51.75px] py-3 transition-colors duration-300 ease-in-out hover:bg-customOrange active:bg-customOrangeThree"
               >
-                <span className="text-[20px] font-medium leading-[24px] text-white">
+                <span className="text-[20px] font-semibold leading-[24px] text-white">
                   Register now
                 </span>
               </button>
@@ -108,7 +92,13 @@ const Banner = () => {
               className="object-contain"
             />
           </div>
-          <div className="animate-slide-down z-50 my-auto flex flex-col items-center gap-2 pt-20">
+          <div className="animate-slide-down relative z-50 my-auto flex flex-col items-center gap-2 pt-20">
+            <Image
+              src="/redMask.svg"
+              width={700}
+              height={2500}
+              className="absolute bottom-0 left-0"
+            />{" "}
             <LottiePlayerHtmlRed />
           </div>
           <div className="animate-slide-up my-auto flex flex-col items-center gap-2">
@@ -139,7 +129,13 @@ const Banner = () => {
               className="object-contain"
             />
           </div>
-          <div className="animate-slide-down z-50 my-auto flex flex-col items-center gap-2 pb-16">
+          <div className="animate-slide-down relative z-50 my-auto flex flex-col items-center gap-2 pb-16">
+            <Image
+              src="/greenMask.svg"
+              width={700}
+              height={2500}
+              className="absolute bottom-0 left-0"
+            />
             <LottiePlayerHtml />
           </div>
         </div>
