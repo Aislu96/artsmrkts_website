@@ -29,13 +29,13 @@ const Tools = () => {
         </p>
       </div>
       <div className="flex flex-col gap-4">
-        <ul className="flex flex-row gap-3">
+        <ul className="flex flex-row flex-nowrap gap-3 overflow-x-auto">
           {Object.keys(cardText).map((key, index) => (
             <CardTools
               key={key}
               id={key}
               title={titles[key]}
-              imageSrc={images[key]} // Передаем соответствующее изображение
+              imageSrc={images[key]}
               isActive={isClickedCard === key}
               isHovered={hoveredIndex === key}
               onClick={setIsClickedCard}
@@ -44,7 +44,7 @@ const Tools = () => {
             />
           ))}
         </ul>
-        <p className="border-l-solid --webkit-transition-opacity --webkit-transition-duration-500 border-l-[3px] border-l-customOrangeSeven py-2.5 pl-6 pr-2.5 text-[20px] font-medium leading-[24px] transition-opacity duration-500 ease-in-out">
+        <p className="border-l-solid border-l-[3px] border-l-customOrangeSeven py-2.5 pl-6 pr-2.5 text-[20px] font-medium leading-[24px] transition-opacity duration-500 ease-in-out">
           {cardText[isClickedCard]}
         </p>
       </div>
