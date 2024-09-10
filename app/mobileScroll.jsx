@@ -94,11 +94,7 @@ export const Mobile1 = () => {
         <Image src="/qrcode.png" width={180} height={180} />
         <div className="space-y-6">
           <p className="w-60 text-sm">
-            MetaTrader4 mobile is very similar to MetaTrader4 for PC by its
-            functionality. This mobile application supports most PC
-            terminal&apos;s features (all trading functions, execution modes, as
-            well as powerful technical analysis) except for the algorithmic
-            trading functions.
+            MetaTrader4 mobile is very similar to MetaTrader5 for PC by its functionality. This mobile application supports most PC terminal's features (all trading functions, execution modes, as well as powerful technical analysis) except for the algorithmic trading functions.
           </p>
           <button className="rounded-full bg-customBlueFon px-6 py-2 text-white">
             view our platform
